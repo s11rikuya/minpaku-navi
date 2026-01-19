@@ -399,7 +399,9 @@ get_header(); ?>
     <div class="mt-12 text-center">
         <div class="card p-8 bg-gradient-to-br from-primary-500 to-secondary-500 text-white">
             <div class="mb-4">
-                <span class="text-5xl">🚀</span>
+                <svg class="w-16 h-16 text-white mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
             </div>
             <h2 class="text-2xl font-bold mb-4">あなたにピッタリの運営会社を見つけよう</h2>
             <p class="text-lg mb-6 opacity-90">
@@ -407,7 +409,7 @@ get_header(); ?>
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="<?php echo esc_url(site_url('/contact')); ?>" class="btn-accent transform hover:scale-105">
-                    💌 無料相談を申し込む
+                    無料相談を申し込む
                 </a>
                 <a href="<?php echo esc_url(site_url('/companies')); ?>" class="btn-secondary">
                     すべての運営会社を見る

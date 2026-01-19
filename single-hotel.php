@@ -472,7 +472,7 @@
                     </p>
                     <a href="<?php echo esc_url(site_url('/contact')); ?>?subject=<?php echo urlencode('宿泊施設掲載依頼'); ?>" 
                        class="btn-secondary w-full justify-center text-sm md:text-base">
-                        🚀 掲載依頼をする
+                        掲載依頼をする
                     </a>
                 </div>
             </div>

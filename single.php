@@ -228,7 +228,7 @@
                     </p>
                     <a href="<?php echo esc_url(site_url('/contact')); ?>?subject=<?php echo urlencode('運営会社掲載依頼'); ?>" 
                        class="btn-secondary w-full justify-center text-sm md:text-base">
-                        🚀 掲載依頼をする
+                        掲載依頼をする
                     </a>
                 </div>
             </div>
@@ -297,13 +297,13 @@
                         <!-- 記事一覧へのリンク -->
                         <div class="card p-6 bg-gradient-to-br from-secondary-50 to-primary-50">
                             <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
-                                📚 記事一覧
+                                記事一覧
                             </h3>
                             <p class="text-sm text-gray-600 mb-4">
                                 他の記事もチェックしてみませんか？
                             </p>
                             <a href="<?php echo esc_url(get_permalink(get_option('page_for_posts'))); ?>" class="btn-secondary w-full justify-center">
-                                📰 記事一覧を見る
+                                記事一覧を見る
                             </a>
                         </div>
 
@@ -316,7 +316,7 @@
                                 あなたにピッタリの民泊運営会社を見つけませんか？
                             </p>
                             <a href="<?php echo esc_url(site_url('/companies')); ?>" class="btn-primary w-full justify-center">
-                                🚀 運営会社を探す
+                                運営会社を探す
                             </a>
                         </div>
                     </div>

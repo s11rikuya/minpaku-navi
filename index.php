@@ -4,7 +4,7 @@
     <!-- ページヘッダー -->
     <div class="text-center mb-12">
         <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            📰 最新記事・お知らせ
+            最新記事・お知らせ
         </h1>
         <p class="text-lg text-gray-600 max-w-2xl mx-auto">
             民泊運営に役立つ情報や、業界の最新ニュースをお届けします
@@ -84,7 +84,7 @@
                             <!-- ページ情報 -->
                             <div class="text-center text-sm text-gray-600">
                                 <span class="inline-flex items-center px-3 py-1.5 bg-gray-100 rounded-full">
-                                    📰 全 <?php echo $wp_query->found_posts; ?> 記事中 
+                                    全 <?php echo $wp_query->found_posts; ?> 記事中 
                                     <?php 
                                     $paged = max(1, get_query_var('paged'));
                                     $posts_per_page = get_option('posts_per_page');
@@ -244,7 +244,7 @@
                         あなたにピッタリの民泊運営会社を見つけませんか？
                     </p>
                     <a href="<?php echo esc_url(site_url('/companies')); ?>" class="btn-primary w-full justify-center">
-                        🚀 運営会社を探す
+                        運営会社を探す
                     </a>
                 </div>
             </div>

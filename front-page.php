@@ -109,7 +109,7 @@
                             'chubu' => '中部地方',
                             'kansai' => 'その他関西',
                             'chugoku' => '中国地方',
-                            'shikoku' => '🌊 四国地方',
+                            'shikoku' => '四国地方',
                             'kyushu' => '九州・沖縄'
                         );
                         
@@ -162,7 +162,7 @@
                 
                 <div class="flex items-end">
                     <button type="submit" class="w-full btn-primary transform hover:scale-105">
-                        🚀 検索スタート
+                        検索スタート
                     </button>
                 </div>
             </form>
@@ -251,7 +251,7 @@
                         </div>
                         
                         <a href="<?php the_permalink(); ?>" class="w-full btn-primary justify-center">
-                            😊 詳しく見てみる
+                            詳しく見てみる
                         </a>
                     </div>
             <?php
@@ -298,7 +298,7 @@
                             </div>
                             
                             <a href="<?php the_permalink(); ?>" class="w-full btn-primary justify-center">
-                                😊 詳しく見てみる
+                                詳しく見てみる
                             </a>
                         </div>
             <?php
@@ -311,7 +311,7 @@
         
         <div class="text-center mt-12">
             <a href="<?php echo esc_url(site_url('/companies')); ?>" class="btn-accent">
-                🌈 すべての運営会社を見る
+                すべての運営会社を見る
             </a>
         </div>
     </div>
@@ -356,7 +356,7 @@
                     <h3 class="text-xl font-bold text-gray-900 mb-4">ゲスト対応</h3>
                     <p class="text-gray-600 leading-relaxed">
                         24時間365日、多言語でのゲストサポート。<br>
-                        対応方法や体制について詳しくご紹介 😊
+                        対応方法や体制について詳しくご紹介
                     </p>
                 </div>
             </div>
@@ -371,7 +371,7 @@
                     <h3 class="text-xl font-bold text-gray-900 mb-4">収益最適化</h3>
                     <p class="text-gray-600 leading-relaxed">
                         データ分析とマーケティング手法について。<br>
-                        収益向上の仕組みをわかりやすく解説 🚀
+                        収益向上の仕組みをわかりやすく解説
                     </p>
                 </div>
             </div>
@@ -403,7 +403,7 @@
             </div>
             <div class="card bg-white/10 backdrop-blur-sm border-white/20 p-4 md:p-6">
                 <div class="text-2xl md:text-4xl font-bold mb-1 md:mb-2">95%</div>
-                <div class="text-sm md:text-lg opacity-90">😊 平均満足度</div>
+                <div class="text-sm md:text-lg opacity-90">平均満足度</div>
             </div>
             <div class="card bg-white/10 backdrop-blur-sm border-white/20 p-4 md:p-6">
                 <div class="text-2xl md:text-4xl font-bold mb-1 md:mb-2">24/7</div>
@@ -418,7 +418,9 @@
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <div class="inline-block mb-4">
-                <span class="text-4xl">📰</span>
+                <svg class="w-12 h-12 text-primary-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                </svg>
             </div>
             <h2 class="text-3xl font-bold text-gray-900 mb-4">最新情報をお届け</h2>
             <p class="text-lg text-gray-600">民泊運営に役立つ、ためになる情報満載</p>
@@ -471,7 +473,7 @@
         
         <div class="text-center mt-12">
             <a href="<?php echo esc_url(site_url('/category/columns')); ?>" class="btn-secondary">
-                📚 すべての記事を見る
+                すべての記事を見る
             </a>
         </div>
     </div>
@@ -481,7 +483,9 @@
 <section class="py-16 gradient-warm text-white">
     <div class="max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 text-center">
         <div class="mb-6">
-            <span class="text-6xl">🎉</span>
+            <svg class="w-16 h-16 text-white mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
         </div>
         <h2 class="text-2xl md:text-3xl font-bold mb-4">民泊運営を始めてみませんか？</h2>
         <p class="text-lg md:text-xl mb-6 md:mb-8 opacity-90 leading-relaxed">
@@ -490,10 +494,10 @@
         </p>
         <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
             <a href="<?php echo esc_url(site_url('/companies')); ?>" class="btn-primary transform hover:scale-105 text-sm md:text-base">
-                🚀 運営会社を比較する
+                運営会社を比較する
             </a>
             <a href="<?php echo esc_url(site_url('/contact')); ?>" class="btn-secondary text-sm md:text-base">
-                💌 情報について問い合わせる
+                情報について問い合わせる
             </a>
         </div>
     </div>
