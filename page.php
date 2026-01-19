@@ -40,7 +40,7 @@ get_header(); ?>
                     </p>
                     <a href="<?php echo esc_url(site_url('/contact')); ?>?subject=<?php echo urlencode('【' . get_the_title() . '】情報修正依頼'); ?>" 
                        class="btn-primary w-full justify-center text-sm md:text-base">
-                        📝 修正依頼をする
+                        修正依頼をする
                     </a>
                 </div>
             </div>

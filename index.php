@@ -25,7 +25,7 @@
                                     </a>
                                     <div class="absolute top-4 left-4">
                                         <span class="bg-primary-500 text-white px-3 py-1 rounded-full text-xs font-medium">
-                                            📝 新着
+                                            新着
                                         </span>
                                     </div>
                                 </div>
@@ -35,7 +35,7 @@
                                 <header class="mb-4">
                                     <div class="flex items-center text-sm text-gray-500 mb-3">
                                         <time datetime="<?php echo get_the_date('c'); ?>" class="flex items-center">
-                                            📅 <?php echo get_the_date(); ?>
+                                            <?php echo get_the_date(); ?>
                                         </time>
                                         <?php
                                         $categories = get_the_category();
@@ -160,7 +160,9 @@
             <?php else : ?>
                 <div class="text-center py-12">
                     <div class="mb-6">
-                        <span class="text-6xl">📝</span>
+                        <svg class="w-20 h-20 text-gray-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
                     </div>
                     <h2 class="text-2xl font-bold text-gray-900 mb-4">まだ記事がありません</h2>
                     <p class="text-gray-500 mb-8">
@@ -168,7 +170,7 @@
                         お楽しみにお待ちください！
                     </p>
                     <a href="<?php echo esc_url(home_url('/')); ?>" class="btn-primary">
-                        🏠 トップページに戻る
+                        トップページに戻る
                     </a>
                 </div>
             <?php endif; ?>
@@ -224,7 +226,7 @@
                                             <?php echo $post['post_title']; ?>
                                         </h4>
                                         <time datetime="<?php echo get_the_date('c', $post['ID']); ?>" class="text-xs text-gray-500 mt-1 block flex items-center">
-                                            📅 <?php echo get_the_date('', $post['ID']); ?>
+                                            <?php echo get_the_date('', $post['ID']); ?>
                                         </time>
                                     </a>
                                 </li>

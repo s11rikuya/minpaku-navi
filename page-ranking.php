@@ -8,7 +8,9 @@ get_header(); ?>
     <!-- ページヘッダー -->
     <div class="text-center mb-12">
         <div class="inline-block mb-4">
-            <span class="text-5xl">🏆</span>
+            <svg class="w-16 h-16 text-primary-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+            </svg>
         </div>
         <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             運営会社ランキング
@@ -57,10 +59,10 @@ get_header(); ?>
             <div>
                 <label class="block text-sm font-semibold text-gray-700 mb-2">並び順</label>
                 <select id="sort-filter" class="w-full rounded-2xl border-gray-200 focus:border-primary-400 focus:ring-primary-400">
-                    <option value="rating">⭐ 評価順</option>
-                    <option value="properties">🏠 物件数順</option>
-                    <option value="fee">💰 料金順</option>
-                    <option value="experience">📅 実績順</option>
+                    <option value="rating">評価順</option>
+                    <option value="properties">物件数順</option>
+                    <option value="fee">料金順</option>
+                    <option value="experience">実績順</option>
                 </select>
             </div>
         </div>
@@ -69,19 +71,19 @@ get_header(); ?>
     <!-- ランキングタブ -->
     <div class="flex flex-wrap gap-2 mb-8 justify-center">
         <button class="ranking-tab active" data-tab="overall">
-            🏆 総合ランキング
+            総合ランキング
         </button>
         <button class="ranking-tab" data-tab="rating">
             評価ランキング
         </button>
         <button class="ranking-tab" data-tab="properties">
-            🏠 物件数ランキング
+            物件数ランキング
         </button>
         <button class="ranking-tab" data-tab="cost">
             コスパランキング
         </button>
         <button class="ranking-tab" data-tab="service">
-            🎯 サービスランキング
+            サービスランキング
         </button>
     </div>
 
@@ -170,7 +172,7 @@ get_header(); ?>
                                                         <span class="ml-1 text-xs text-gray-500">(128件)</span>
                                                     </div>
                                                     <div class="text-sm text-gray-600">
-                                                        📅 実績 <?php echo $years_experience; ?>年
+                                                        実績 <?php echo $years_experience; ?>年
                                                     </div>
                                                 </div>
                                                 
@@ -202,7 +204,7 @@ get_header(); ?>
                                                 <span class="text-sm font-bold text-primary-600"><?php echo esc_html($fee_structure); ?></span>
                                             </div>
                                             <div class="flex justify-between items-center">
-                                                <span class="text-sm text-gray-600 flex items-center">🏠 管理物件:</span>
+                                                <span class="text-sm text-gray-600 flex items-center">管理物件:</span>
                                                 <span class="text-sm font-bold text-secondary-600"><?php echo esc_html($property_count); ?>件</span>
                                             </div>
                                             <div class="flex justify-between items-center">
@@ -226,7 +228,7 @@ get_header(); ?>
                             <div class="mt-6 pt-6 border-t border-gray-200">
                                 <div class="bg-primary-50 rounded-2xl p-4">
                                     <h3 class="text-sm font-bold text-primary-800 mb-2 flex items-center">
-                                        🎯 ランクイン理由
+                                        ランクイン理由
                                     </h3>
                                     <p class="text-sm text-primary-700">
                                         <?php
@@ -374,7 +376,9 @@ get_header(); ?>
             </div>
             <div class="text-center">
                 <div class="bg-white rounded-2xl p-4 mb-3">
-                    <span class="text-3xl">🎯</span>
+                    <svg class="w-10 h-10 text-primary-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                    </svg>
                 </div>
                 <h3 class="font-semibold text-gray-900 mb-2">サービス品質</h3>
                 <p class="text-sm text-gray-600">提供サービスの充実度と品質の高さ</p>

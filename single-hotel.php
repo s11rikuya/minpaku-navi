@@ -47,7 +47,7 @@
                                     <?php endif; ?>
                                     <?php if ($hotel_prefecture) : ?>
                                         <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
-                                            📍 <?php echo esc_html($hotel_prefecture); ?>
+                                            <?php echo esc_html($hotel_prefecture); ?>
                                         </span>
                                     <?php endif; ?>
                                 </div>
@@ -434,7 +434,9 @@
             <div class="card p-4 md:p-6 bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100">
                 <div class="text-center">
                     <div class="mb-3 md:mb-4">
-                        <span class="text-3xl md:text-4xl">✏️</span>
+                        <svg class="w-12 h-12 text-primary-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
                     </div>
                     <h3 class="text-base md:text-lg font-bold text-gray-900 mb-2 md:mb-3">情報の修正依頼</h3>
                     <p class="text-xs md:text-sm text-gray-600 mb-3 md:mb-4">
@@ -452,7 +454,7 @@
                     ?>
                     <a href="<?php echo esc_url(add_query_arg($correction_params, site_url('/contact'))); ?>" 
                        class="btn-primary w-full justify-center text-sm md:text-base">
-                        📝 修正依頼をする
+                        修正依頼をする
                     </a>
                 </div>
             </div>

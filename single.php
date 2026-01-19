@@ -13,7 +13,7 @@
                                 <?php the_post_thumbnail('large', ['class' => 'w-full h-64 md:h-80 object-cover']); ?>
                                 <div class="absolute top-4 left-4">
                                     <span class="bg-primary-500 text-white px-3 py-1.5 rounded-full text-sm font-medium">
-                                        📝 記事
+                                        記事
                                     </span>
                                 </div>
                             </div>
@@ -24,7 +24,7 @@
                             <header class="mb-6">
                                 <div class="flex flex-wrap items-center text-sm text-gray-500 mb-4 gap-4">
                                     <time datetime="<?php echo get_the_date('c'); ?>" class="flex items-center">
-                                        📅 <?php echo get_the_date(); ?>
+                                        <?php echo get_the_date(); ?>
                                     </time>
                                     
                                     <?php
@@ -172,7 +172,7 @@
                                             
                                             <div class="p-4">
                                                 <div class="text-xs text-gray-500 mb-2 flex items-center">
-                                                    📅 <?php echo get_the_date(); ?>
+                                                    <?php echo get_the_date(); ?>
                                                 </div>
                                                 <h3 class="text-sm font-semibold text-gray-900 mb-2 line-clamp-2">
                                                     <a href="<?php the_permalink(); ?>" class="hover:text-primary-600 transition-colors">
@@ -210,7 +210,7 @@
                     </p>
                     <a href="<?php echo esc_url(site_url('/contact')); ?>?subject=<?php echo urlencode('【' . get_the_title() . '】情報修正依頼'); ?>" 
                        class="btn-primary w-full justify-center text-sm md:text-base">
-                        📝 修正依頼をする
+                        修正依頼をする
                     </a>
                 </div>
             </div>
@@ -285,7 +285,7 @@
                                                     <?php echo $post['post_title']; ?>
                                                 </h4>
                                                 <time datetime="<?php echo get_the_date('c', $post['ID']); ?>" class="text-xs text-gray-500 mt-1 block flex items-center">
-                                                    📅 <?php echo get_the_date('', $post['ID']); ?>
+                                                    <?php echo get_the_date('', $post['ID']); ?>
                                                 </time>
                                             </a>
                                         </li>
@@ -310,7 +310,7 @@
                         <!-- 運営会社へのリンク -->
                         <div class="card p-6 bg-gradient-to-br from-primary-50 to-warm-50">
                             <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
-                                🏢 運営会社を探す
+                                運営会社を探す
                             </h3>
                             <p class="text-sm text-gray-600 mb-4">
                                 あなたにピッタリの民泊運営会社を見つけませんか？
@@ -333,7 +333,7 @@
                 お探しの記事は削除されたか、移動された可能性があります。
             </p>
             <a href="<?php echo esc_url(home_url('/')); ?>" class="btn-primary">
-                🏠 トップページに戻る
+                トップページに戻る
             </a>
         </div>
     <?php endif; ?>

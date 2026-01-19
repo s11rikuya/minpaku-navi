@@ -48,7 +48,7 @@ $hotel_data = array(
             <?php if ($hotel_data['hotel_prefecture']) : ?>
                 <div class="absolute top-3 right-3">
                     <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-green-500/90 text-white backdrop-blur-sm">
-                        📍 <?php echo esc_html($hotel_data['hotel_prefecture']); ?>
+                        <?php echo esc_html($hotel_data['hotel_prefecture']); ?>
                     </span>
                 </div>
             <?php endif; ?>

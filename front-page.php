@@ -21,7 +21,7 @@
         <div class="text-center w-full">
             <div class="mb-4 md:mb-6 inline-block">
                 <span class="inline-flex items-center px-3 py-1.5 md:px-2 md:py-2 bg-white/25 backdrop-blur-md rounded-full text-white text-xs md:text-sm font-medium border border-white/20">
-                    🏠 民泊運営をわかりやすく、比較しやすく
+                    民泊運営をわかりやすく、比較しやすく
                 </span>
             </div>
             <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white leading-tight drop-shadow-2xl">
@@ -155,8 +155,8 @@
                     <select name="service" class="w-full rounded-2xl border-gray-200 focus:border-primary-400 focus:ring-primary-400 transition-colors">
                         <option value="">何でもOK</option>
                         <option value="cleaning">清掃込み</option>
-                        <option value="24h">🌙 24時間対応</option>
-                        <option value="airbnb">🏡 Airbnbパートナー</option>
+                        <option value="24h">24時間対応</option>
+                        <option value="airbnb">Airbnbパートナー</option>
                     </select>
                 </div>
                 
@@ -175,7 +175,9 @@
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <div class="inline-block mb-4">
-                <span class="text-4xl float-animation">🌟</span>
+                <svg class="w-12 h-12 text-yellow-500 mx-auto float-animation" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
             </div>
             <h2 class="text-3xl font-bold text-gray-900 mb-4">評価の高い人気運営会社</h2>
             <p class="text-lg text-gray-600">実績豊富で評判の良い運営会社をご紹介</p>
@@ -230,7 +232,7 @@
                                 <span class="text-sm font-semibold text-primary-600"><?php echo esc_html($fee_structure); ?></span>
                             </div>
                             <div class="flex justify-between items-center">
-                                <span class="text-sm text-gray-500 flex items-center">🏠 管理物件数:</span>
+                                <span class="text-sm text-gray-500 flex items-center">管理物件数:</span>
                                 <span class="text-sm font-semibold text-secondary-600"><?php echo esc_html($property_count); ?>件</span>
                             </div>
                         </div>
@@ -290,7 +292,7 @@
                                     <span class="text-sm font-semibold text-primary-600"><?php echo esc_html($fee_structure); ?></span>
                                 </div>
                                 <div class="flex justify-between items-center">
-                                    <span class="text-sm text-gray-500 flex items-center">🏠 管理物件数:</span>
+                                    <span class="text-sm text-gray-500 flex items-center">管理物件数:</span>
                                     <span class="text-sm font-semibold text-secondary-600"><?php echo esc_html($property_count); ?>件</span>
                                 </div>
                             </div>
@@ -320,7 +322,9 @@
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <div class="inline-block mb-4">
-                <span class="text-4xl">🎯</span>
+                <svg class="w-12 h-12 text-primary-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                </svg>
             </div>
             <h2 class="text-3xl font-bold text-gray-900 mb-4">民泊運営代行サービスとは？</h2>
             <p class="text-lg text-gray-600">民泊運営に必要な業務とサービス内容をわかりやすく解説</p>
@@ -330,7 +334,9 @@
             <div class="text-center">
                 <div class="card p-8">
                     <div class="bg-primary-100 w-20 h-20 rounded-3xl flex items-center justify-center mx-auto mb-6 float-animation">
-                        <span class="text-4xl">🏠</span>
+                        <svg class="w-12 h-12 text-primary-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-4">物件管理</h3>
                     <p class="text-gray-600 leading-relaxed">
@@ -358,7 +364,9 @@
             <div class="text-center">
                 <div class="card p-8">
                     <div class="bg-warm-100 w-20 h-20 rounded-3xl flex items-center justify-center mx-auto mb-6 float-animation" style="animation-delay: 1s;">
-                        <span class="text-4xl">📈</span>
+                        <svg class="w-12 h-12 text-primary-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-4">収益最適化</h3>
                     <p class="text-gray-600 leading-relaxed">
@@ -391,7 +399,7 @@
             </div>
             <div class="card bg-white/10 backdrop-blur-sm border-white/20 p-4 md:p-6">
                 <div class="text-2xl md:text-4xl font-bold mb-1 md:mb-2">5,000+</div>
-                <div class="text-sm md:text-lg opacity-90">🏠 総管理物件数</div>
+                <div class="text-sm md:text-lg opacity-90">総管理物件数</div>
             </div>
             <div class="card bg-white/10 backdrop-blur-sm border-white/20 p-4 md:p-6">
                 <div class="text-2xl md:text-4xl font-bold mb-1 md:mb-2">95%</div>
@@ -431,7 +439,7 @@
                                 <?php the_post_thumbnail('medium', ['class' => 'w-full h-48 object-cover transition-transform duration-300 hover:scale-105']); ?>
                                 <div class="absolute top-3 left-3">
                                     <span class="bg-primary-500 text-white px-3 py-1 rounded-full text-xs font-medium">
-                                        📝 新着
+                                        新着
                                     </span>
                                 </div>
                             </div>
@@ -439,7 +447,7 @@
                         
                         <div class="p-6">
                             <div class="text-sm text-gray-500 mb-2 flex items-center">
-                                📅 <?php echo get_the_date(); ?>
+                                <?php echo get_the_date(); ?>
                             </div>
                             <h3 class="text-lg font-bold text-gray-900 mb-2 line-clamp-2">
                                 <a href="<?php the_permalink(); ?>" class="hover:text-primary-600 transition-colors">
