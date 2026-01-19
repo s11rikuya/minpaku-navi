@@ -1,0 +1,97 @@
+/* Contact Form 7のカスタムスタイル */
+
+/* フォーム全体 */
+.wpcf7-form {
+    @apply space-y-6;
+}
+
+/* 入力フィールド */
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form input[type="tel"],
+.wpcf7-form textarea {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors;
+}
+
+/* ラベル */
+.wpcf7-form label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+/* 必須マーク */
+.wpcf7-form .required {
+    @apply text-red-500 ml-1;
+}
+
+/* 送信ボタン */
+.wpcf7-submit {
+    @apply w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-blue-700 transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+/* エラーメッセージ */
+.wpcf7-not-valid-tip {
+    @apply text-red-500 text-sm mt-1;
+}
+
+.wpcf7-response-output {
+    @apply mt-4 p-4 rounded-lg text-sm;
+}
+
+/* エラー時のレスポンス */
+.wpcf7-validation-errors,
+.wpcf7-acceptance-missing {
+    @apply bg-red-50 text-red-700 border border-red-200;
+}
+
+/* 送信成功時のレスポンス */
+.wpcf7-mail-sent-ok {
+    @apply bg-green-50 text-green-700 border border-green-200;
+}
+
+/* スパム判定時のレスポンス */
+.wpcf7-spam-blocked {
+    @apply bg-yellow-50 text-yellow-700 border border-yellow-200;
+}
+
+/* 入力欄のエラー表示 */
+.wpcf7-not-valid {
+    @apply border-red-300 focus:ring-red-500 focus:border-red-500;
+}
+
+/* プレースホルダー */
+.wpcf7-form input::placeholder,
+.wpcf7-form textarea::placeholder {
+    @apply text-gray-400;
+}
+
+/* フォーカス時のプレースホルダー */
+.wpcf7-form input:focus::placeholder,
+.wpcf7-form textarea:focus::placeholder {
+    @apply text-gray-300;
+}
+
+/* 送信中のローディング状態 */
+.wpcf7-form.submitting .wpcf7-submit {
+    @apply opacity-50 cursor-wait;
+}
+
+/* チェックボックスとラジオボタン */
+.wpcf7-checkbox .wpcf7-list-item,
+.wpcf7-radio .wpcf7-list-item {
+    @apply block mb-2;
+}
+
+.wpcf7-checkbox .wpcf7-list-item input,
+.wpcf7-radio .wpcf7-list-item input {
+    @apply mr-2;
+}
+
+/* 確認用の注意書き */
+.wpcf7-form .form-notice {
+    @apply text-sm text-gray-500 mt-2;
+}
+
+/* 送信ボタンのラッパー */
+.wpcf7-form .submit-wrapper {
+    @apply mt-8 text-center;
+} 

@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-2xl text-white bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition duration-200 shadow-lg hover:shadow-xl transform hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center px-6 py-3 border border-gray-300 text-base font-medium rounded-2xl text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition duration-200 shadow-md hover:shadow-lg;
+  }
+
+  .btn-accent {
+    @apply inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-2xl text-white bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-500 transition duration-200 shadow-lg hover:shadow-xl transform hover:scale-105;
+  }
+
+  .feature-badge {
+    @apply inline-flex items-center px-3 py-1.5 text-xs font-medium text-primary-700 bg-primary-100 rounded-full border border-primary-200;
+  }
+
+  .card {
+    @apply bg-white shadow-lg rounded-3xl border border-gray-100 hover:shadow-xl transition-all duration-300;
+  }
+
+  .gradient-warm {
+    @apply bg-gradient-to-br from-primary-400 via-warm-400 to-secondary-400;
+  }
+
+  /* ヒーロー画像用のカスタムスタイル */
+  .hero-image-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    z-index: 1;
+  }
+
+  .hero-overlay {
+    @apply absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50;
+  }
+
+  .pagination-link {
+    @apply inline-flex items-center justify-center w-10 h-10 text-sm font-medium rounded-2xl;
+    @apply bg-white border border-gray-200 text-gray-700;
+    @apply hover:bg-primary-50 hover:border-primary-300 hover:text-primary-600;
+    @apply transition-all duration-200 transform hover:scale-105;
+    text-decoration: none;
+  }
+
+  .pagination-current {
+    @apply inline-flex items-center justify-center w-10 h-10 text-sm font-bold rounded-2xl;
+    @apply bg-gradient-to-r from-primary-500 to-secondary-500 text-white;
+    @apply shadow-lg;
+    box-shadow: 0 4px 16px rgba(249, 115, 22, 0.3);
+  }
+
+  .pagination-nav {
+    @apply inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-2xl;
+    @apply bg-white border border-gray-200 text-gray-700;
+    @apply hover:bg-primary-50 hover:border-primary-300 hover:text-primary-600;
+    @apply transition-all duration-200 transform hover:scale-105;
+    text-decoration: none;
+  }
+
+  .pagination-prev::before {
+    content: '←';
+    margin-right: 0.5rem;
+    font-weight: bold;
+  }
+
+  .pagination-next::after {
+    content: '→';
+    margin-left: 0.5rem;
+    font-weight: bold;
+  }
+
+  .pagination-dots {
+    @apply inline-flex items-center justify-center w-10 h-10 text-sm text-gray-400;
+  }
+
+  /* ページジャンプのフォーカススタイル */
+  .pagination-input:focus {
+    @apply ring-2 ring-primary-200 ring-opacity-50;
+  }
+
+  /* ホバーエフェクトの拡張 */
+  .pagination-link:hover,
+  .pagination-nav:hover {
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.2);
+  }
+}
+
+/* ナビゲーションメニューのスタイル */
+.mobile-menu li,
+nav li {
+  list-style: none;
+}
+
+/* WordPressのデフォルトスタイルの上書き */
+.wp-block-categories-list,
+.wp-block-categories__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* カスタムアニメーション */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* 背景ボカシ効果の強化 */
+.backdrop-blur-custom {
+  backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(8px) saturate(180%);
+}
+
+/* テキスト影の強化 */
+.text-shadow-strong {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* グラデーション背景 */
+@layer utilities {
+  .gradient-warm {
+    background: linear-gradient(135deg, theme('colors.primary.500'), theme('colors.secondary.500'), theme('colors.warm.400'));
+  }
+}
+
+/* カスタムblur */
+@layer utilities {
+  .backdrop-blur-soft {
+    backdrop-filter: blur(8px);
+  }
+  
+  .backdrop-blur-strong {
+    backdrop-filter: blur(16px);
+  }
+}
+
+/* レスポンシブ対応 */
+@layer utilities {
+  @media (max-width: 640px) {
+    .pagination-nav {
+      @apply px-3 py-2 text-xs;
+    }
+    
+    .pagination-link,
+    .pagination-current {
+      @apply w-8 h-8 text-xs;
+    }
+  }
+} 

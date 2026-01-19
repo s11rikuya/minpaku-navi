@@ -1,0 +1,54 @@
+/*
+Theme Name: Minpaku Portal
+Theme URI: 
+Author: Your Name
+Author URI: 
+Description: 民泊運用代行会社のポータルサイトのためのWordPressテーマ
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: minpaku-portal
+*/
+
+/* このファイルは、TailwindCSSで生成されたスタイルを上書きする必要がある場合にのみ使用します */
+
+/* プロセスブロックのスタイル */
+.prose {
+    max-width: 65ch;
+    color: #374151;
+}
+
+.prose h2 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.prose p {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+.prose ul {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    list-style-type: disc;
+    padding-left: 1.625em;
+}
+
+.prose ol {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    list-style-type: decimal;
+    padding-left: 1.625em;
+}
+
+/* WordPressの管理バーとの干渉を防ぐ */
+.admin-bar .sticky {
+    top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+    .admin-bar .sticky {
+        top: 46px;
+    }
+} 

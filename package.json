@@ -1,0 +1,15 @@
+{
+  "name": "minpaku-theme",
+  "version": "1.0.0",
+  "description": "民泊運営代行会社のポータルサイトのためのWordPressテーマ",
+  "scripts": {
+    "build": "tailwindcss -i ./src/css/tailwind.css -o ./dist/style.css --minify",
+    "watch": "tailwindcss -i ./src/css/tailwind.css -o ./dist/style.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
+  }
+}
