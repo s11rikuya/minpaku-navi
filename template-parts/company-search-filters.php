@@ -8,7 +8,7 @@ if (!defined('ABSPATH')) {
 }
 
 // 検索条件があるかチェック
-$has_filters = !empty($_GET['area']) || !empty($_GET['fee']) || !empty($_GET['service']);
+$has_filters = !empty($_GET['area']) || !empty($_GET['fee']) || !empty($_GET['service']) || !empty($_GET['s']) || !empty($_GET['orderby']);
 
 if (!$has_filters) {
     return;
@@ -16,6 +16,13 @@ if (!$has_filters) {
 
 // 検索条件のラベルを取得
 $labels = get_search_condition_labels();
+
+// ソートラベル
+$sort_labels = array(
+    'date' => '新着順',
+    'title' => '名前順',
+    'property_count' => '管理物件数順'
+);
 ?>
 
 <div class="mb-8 bg-white rounded-xl p-6 shadow-sm border border-gray-200">
@@ -23,24 +30,37 @@ $labels = get_search_condition_labels();
         <h3 class="text-lg font-semibold text-gray-900">🔍 検索条件</h3>
         <div class="flex flex-wrap gap-2">
             
+            <?php if (!empty($_GET['s'])) : ?>
+                <span class="inline-flex items-center px-3 py-1 bg-yellow-100 text-yellow-800 text-sm font-medium rounded-full">
+                    🔎 キーワード: "<?php echo esc_html($_GET['s']); ?>"
+                </span>
+            <?php endif; ?>
+            
             <?php if (!empty($_GET['area'])) : ?>
                 <?php $area_label = $labels['area'][$_GET['area']] ?? $_GET['area']; ?>
                 <span class="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">
-                    エリア: <?php echo esc_html($area_label); ?>
+                    <?php echo esc_html($area_label); ?>
                 </span>
             <?php endif; ?>
 
             <?php if (!empty($_GET['fee'])) : ?>
                 <?php $fee_label = $labels['fee'][$_GET['fee']] ?? $_GET['fee']; ?>
                 <span class="inline-flex items-center px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">
-                    料金帯: <?php echo esc_html($fee_label); ?>
+                    <?php echo esc_html($fee_label); ?>
                 </span>
             <?php endif; ?>
 
             <?php if (!empty($_GET['service'])) : ?>
                 <?php $service_label = $labels['service'][$_GET['service']] ?? $_GET['service']; ?>
                 <span class="inline-flex items-center px-3 py-1 bg-purple-100 text-purple-800 text-sm font-medium rounded-full">
-                    サービス: <?php echo esc_html($service_label); ?>
+                    <?php echo esc_html($service_label); ?>
+                </span>
+            <?php endif; ?>
+            
+            <?php if (!empty($_GET['orderby'])) : ?>
+                <?php $sort_label = $sort_labels[$_GET['orderby']] ?? $_GET['orderby']; ?>
+                <span class="inline-flex items-center px-3 py-1 bg-gray-100 text-gray-800 text-sm font-medium rounded-full">
+                    📊 <?php echo esc_html($sort_label); ?>
                 </span>
             <?php endif; ?>
             

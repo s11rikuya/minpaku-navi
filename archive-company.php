@@ -15,6 +15,9 @@
             </p>
         </div>
 
+        <!-- 検索フォーム -->
+        <?php get_template_part('template-parts/company-search-form'); ?>
+
         <!-- 検索条件の表示 -->
         <?php get_template_part('template-parts/company-search-filters'); ?>
 

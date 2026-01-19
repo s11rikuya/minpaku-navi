@@ -21,7 +21,7 @@ function minpaku_register_post_types() {
         ),
         'public' => true,
         'has_archive' => true,
-        'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
+        'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'page-attributes'),
         'menu_icon' => 'dashicons-building',
         'show_in_rest' => true,
         'rewrite' => array('slug' => 'companies'),

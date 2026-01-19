@@ -72,12 +72,51 @@ function filter_company_query($query) {
             $query->set('meta_query', $meta_query);
         }
         
+        // 並び順の設定
+        if (!empty($_GET['orderby'])) {
+            $orderby = sanitize_text_field($_GET['orderby']);
+            
+            switch ($orderby) {
+                case 'date':
+                    $query->set('orderby', 'date');
+                    $query->set('order', 'DESC');
+                    break;
+                
+                case 'title':
+                    $query->set('orderby', 'title');
+                    $query->set('order', 'ASC');
+                    break;
+                
+                case 'property_count':
+                    $query->set('meta_key', 'property_count_raw');
+                    $query->set('orderby', 'meta_value_num');
+                    $query->set('order', 'DESC');
+                    break;
+                
+                default:
+                    // おすすめ順：メタクエリとランダム性を組み合わせ
+                    $query->set('orderby', array(
+                        'menu_order' => 'ASC',
+                        'date' => 'DESC'
+                    ));
+                    break;
+            }
+        } else {
+            // デフォルトのおすすめ順
+            $query->set('orderby', array(
+                'menu_order' => 'ASC',
+                'date' => 'DESC'
+            ));
+        }
+        
         // デバッグ: 検索条件をログに出力（開発時のみ）
         if (defined('WP_DEBUG') && WP_DEBUG) {
             error_log('Company Search Debug: ' . print_r(array(
                 'area' => $_GET['area'] ?? '',
                 'service' => $_GET['service'] ?? '',
                 'fee' => $_GET['fee'] ?? '',
+                'orderby' => $_GET['orderby'] ?? '',
+                's' => $_GET['s'] ?? '',
                 'meta_query' => $meta_query
             ), true));
         }
