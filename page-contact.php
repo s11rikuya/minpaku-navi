@@ -128,11 +128,11 @@ get_header(); ?>
                         <div>
                             <p class="font-semibold text-gray-900">お問い合わせ対象</p>
                             <p class="text-gray-700 mt-1">
-                                <?php if ($ref_type === 'hotel') : ?>
-                                    🏨 宿泊施設：<strong><?php echo esc_html($hotel_name); ?></strong>
-                                <?php elseif ($ref_type === 'company') : ?>
-                                    🏢 運営会社：<strong><?php echo esc_html($hotel_name); ?></strong>
-                                <?php endif; ?>
+                            <?php if ($ref_type === 'hotel') : ?>
+                                宿泊施設：<strong><?php echo esc_html($hotel_name); ?></strong>
+                            <?php elseif ($ref_type === 'company') : ?>
+                                運営会社：<strong><?php echo esc_html($hotel_name); ?></strong>
+                            <?php endif; ?>
                             </p>
                             <?php if ($ref_url) : ?>
                                 <p class="text-sm text-gray-600 mt-1">

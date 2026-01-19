@@ -30,14 +30,20 @@
             </h1>
             <p class="text-base md:text-xl lg:text-2xl mb-6 md:mb-8 max-w-3xl lg:max-w-4xl mx-auto text-white/95 leading-relaxed drop-shadow-lg px-2">
                 民泊運営の始め方から運営会社の選び方まで、わかりやすく解説。<br class="hidden md:block">
-                あなたにピッタリの運営パートナーを見つけましょう ✨
+                あなたにピッタリの運営パートナーを見つけましょう。
             </p>
             <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-2">
-                <a href="<?php echo esc_url(site_url('/companies')); ?>" class="btn-primary transform hover:scale-105 shadow-2xl text-sm md:text-base">
-                    🔍 運営会社を調べる
+                <a href="<?php echo esc_url(site_url('/companies')); ?>" class="btn-primary transform hover:scale-105 shadow-2xl text-sm md:text-base inline-flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    運営会社を調べる
                 </a>
-                <a href="<?php echo esc_url(site_url('/category/columns')); ?>" class="btn-secondary shadow-2xl backdrop-blur-sm text-sm md:text-base">
-                    💡 民泊運営について学ぶ
+                <a href="<?php echo esc_url(site_url('/category/columns')); ?>" class="btn-secondary shadow-2xl backdrop-blur-sm text-sm md:text-base inline-flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                    民泊運営について学ぶ
                 </a>
             </div>
         </div>
@@ -59,7 +65,9 @@
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="text-center mb-8 md:mb-12">
             <div class="inline-block mb-4">
-                <span class="text-4xl">🔎</span>
+                <svg class="w-12 h-12 text-primary-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
             </div>
             <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">あなたに合った運営会社を比較しよう</h2>
             <p class="text-base md:text-lg text-gray-600">全国の民泊運営会社を条件で絞り込み、詳しく比較できます</p>
@@ -69,7 +77,11 @@
             <form class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6" action="<?php echo esc_url(get_post_type_archive_link('company')); ?>" method="GET">
                 <div>
                     <label class="block text-sm font-semibold text-gray-700 mb-2 md:mb-3 flex items-center">
-                        📍 エリア
+                        <svg class="w-4 h-4 text-gray-500 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        エリア
                     </label>
                     <select name="area" class="w-full rounded-2xl border-gray-200 focus:border-primary-400 focus:ring-primary-400 transition-colors">
                         <option value="">どこでも大丈夫</option>
@@ -80,7 +92,7 @@
                         // 主要都市
                         if (!empty($area_options['major'])) :
                         ?>
-                            <optgroup label="🔥 主要都市">
+                            <optgroup label="主要都市">
                                 <?php foreach ($area_options['major'] as $key => $label) : ?>
                                     <option value="<?php echo esc_attr($key); ?>" <?php selected($selected_area, $key); ?>>
                                         <?php echo esc_html($label); ?>
@@ -92,13 +104,13 @@
                         <?php
                         // 他の地域
                         $region_labels = array(
-                            'tohoku' => '🌾 東北地方',
-                            'kanto' => '🏞️ その他関東',
-                            'chubu' => '🏔️ 中部地方',
-                            'kansai' => '⛩️ その他関西',
-                            'chugoku' => '🏞️ 中国地方',
+                            'tohoku' => '東北地方',
+                            'kanto' => 'その他関東',
+                            'chubu' => '中部地方',
+                            'kansai' => 'その他関西',
+                            'chugoku' => '中国地方',
                             'shikoku' => '🌊 四国地方',
-                            'kyushu' => '🌴 九州・沖縄'
+                            'kyushu' => '九州・沖縄'
                         );
                         
                         foreach ($region_labels as $region => $region_label) :
@@ -120,23 +132,29 @@
                 
                 <div>
                     <label class="block text-sm font-semibold text-gray-700 mb-2 md:mb-3 flex items-center">
-                        💰 料金帯
+                        <svg class="w-4 h-4 text-gray-500 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        料金帯
                     </label>
                     <select name="fee" class="w-full rounded-2xl border-gray-200 focus:border-primary-400 focus:ring-primary-400 transition-colors">
                         <option value="">予算はお任せ</option>
-                        <option value="low">💚 〜10%（お得）</option>
-                        <option value="middle">💛 11%〜15%（標準）</option>
-                        <option value="high">🧡 16%〜（プレミアム）</option>
+                        <option value="low">〜10%（低価格）</option>
+                        <option value="middle">11%〜15%（標準）</option>
+                        <option value="high">16%〜（プレミアム）</option>
                     </select>
                 </div>
                 
                 <div>
                     <label class="block text-sm font-semibold text-gray-700 mb-2 md:mb-3 flex items-center">
-                        ⭐ サービス
+                        <svg class="w-4 h-4 text-gray-500 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                        </svg>
+                        サービス
                     </label>
                     <select name="service" class="w-full rounded-2xl border-gray-200 focus:border-primary-400 focus:ring-primary-400 transition-colors">
                         <option value="">何でもOK</option>
-                        <option value="cleaning">🧹 清掃込み</option>
+                        <option value="cleaning">清掃込み</option>
                         <option value="24h">🌙 24時間対応</option>
                         <option value="airbnb">🏡 Airbnbパートナー</option>
                     </select>
@@ -190,7 +208,7 @@
                                 <?php the_post_thumbnail('medium', ['class' => 'w-full h-48 object-cover transition-transform duration-300 hover:scale-105']); ?>
                                 <div class="absolute top-3 right-3">
                                     <span class="bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-medium text-primary-600">
-                                        ⭐ おすすめ
+                                        おすすめ
                                     </span>
                                 </div>
                             </div>
@@ -208,7 +226,7 @@
                         
                         <div class="space-y-3 mb-4">
                             <div class="flex justify-between items-center">
-                                <span class="text-sm text-gray-500 flex items-center">💰 料金体系:</span>
+                                <span class="text-sm text-gray-500 flex items-center">料金体系:</span>
                                 <span class="text-sm font-semibold text-primary-600"><?php echo esc_html($fee_structure); ?></span>
                             </div>
                             <div class="flex justify-between items-center">
@@ -220,12 +238,12 @@
                         <div class="flex flex-wrap gap-2 mb-4">
                             <?php if ($airbnb_partner === 'Yes') : ?>
                                 <span class="feature-badge">
-                                    🏡 Airbnbパートナー
+                                    Airbnbパートナー
                                 </span>
                             <?php endif; ?>
                             <?php if ($support_24h === 'Yes') : ?>
                                 <span class="feature-badge">
-                                    🌙 24時間対応
+                                    24時間対応
                                 </span>
                             <?php endif; ?>
                         </div>
@@ -268,7 +286,7 @@
                             
                             <div class="space-y-3 mb-4">
                                 <div class="flex justify-between items-center">
-                                    <span class="text-sm text-gray-500 flex items-center">💰 料金体系:</span>
+                                    <span class="text-sm text-gray-500 flex items-center">料金体系:</span>
                                     <span class="text-sm font-semibold text-primary-600"><?php echo esc_html($fee_structure); ?></span>
                                 </div>
                                 <div class="flex justify-between items-center">
@@ -317,7 +335,7 @@
                     <h3 class="text-xl font-bold text-gray-900 mb-4">物件管理</h3>
                     <p class="text-gray-600 leading-relaxed">
                         清掃やメンテナンス、鍵の受け渡しなど。<br>
-                        物件管理に必要な業務内容を詳しく解説 ✨
+                        物件管理に必要な業務内容を詳しく解説
                     </p>
                 </div>
             </div>
@@ -325,7 +343,9 @@
             <div class="text-center">
                 <div class="card p-8">
                     <div class="bg-secondary-100 w-20 h-20 rounded-3xl flex items-center justify-center mx-auto mb-6 float-animation" style="animation-delay: 0.5s;">
-                        <span class="text-4xl">💬</span>
+                        <svg class="w-12 h-12 text-primary-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-4">ゲスト対応</h3>
                     <p class="text-gray-600 leading-relaxed">
@@ -356,7 +376,9 @@
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <div class="inline-block mb-4">
-                <span class="text-4xl">📊</span>
+                <svg class="w-12 h-12 text-white mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
             </div>
             <h2 class="text-3xl font-bold mb-4">民泊運営業界の現状</h2>
             <p class="text-xl opacity-90">当サイトで紹介している運営会社の実績データ</p>
@@ -365,7 +387,7 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
             <div class="card bg-white/10 backdrop-blur-sm border-white/20 p-4 md:p-6">
                 <div class="text-2xl md:text-4xl font-bold mb-1 md:mb-2">150+</div>
-                <div class="text-sm md:text-lg opacity-90">✨ 掲載中の運営会社</div>
+                <div class="text-sm md:text-lg opacity-90">掲載中の運営会社</div>
             </div>
             <div class="card bg-white/10 backdrop-blur-sm border-white/20 p-4 md:p-6">
                 <div class="text-2xl md:text-4xl font-bold mb-1 md:mb-2">5,000+</div>
@@ -377,7 +399,7 @@
             </div>
             <div class="card bg-white/10 backdrop-blur-sm border-white/20 p-4 md:p-6">
                 <div class="text-2xl md:text-4xl font-bold mb-1 md:mb-2">24/7</div>
-                <div class="text-sm md:text-lg opacity-90">🌙 対応可能な会社数</div>
+                <div class="text-sm md:text-lg opacity-90">24時間対応可能な会社数</div>
             </div>
         </div>
     </div>
@@ -456,7 +478,7 @@
         <h2 class="text-2xl md:text-3xl font-bold mb-4">民泊運営を始めてみませんか？</h2>
         <p class="text-lg md:text-xl mb-6 md:mb-8 opacity-90 leading-relaxed">
             運営会社の比較や民泊運営のノウハウをしっかり学んで、<br class="hidden md:block">
-            理想的な民泊運営への第一歩を踏み出しましょう ✨
+            理想的な民泊運営への第一歩を踏み出しましょう。
         </p>
         <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
             <a href="<?php echo esc_url(site_url('/companies')); ?>" class="btn-primary transform hover:scale-105 text-sm md:text-base">

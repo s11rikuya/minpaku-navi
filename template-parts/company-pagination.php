@@ -24,7 +24,7 @@ $posts_per_page = 12; // 運営会社一覧は12件固定
         <!-- ページ情報 -->
         <div class="text-center text-sm text-gray-600">
             <span class="inline-flex items-center px-3 py-1.5 bg-gray-100 rounded-full">
-                🏢 全 <?php echo $wp_query->found_posts; ?> 社中 
+                全 <?php echo $wp_query->found_posts; ?> 社中 
                 <?php echo (($paged - 1) * $posts_per_page + 1); ?>〜<?php echo min($paged * $posts_per_page, $wp_query->found_posts); ?> 社を表示
             </span>
         </div>

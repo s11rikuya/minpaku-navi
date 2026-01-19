@@ -180,7 +180,7 @@
                 <!-- 検索フォーム -->
                 <div class="card p-6">
                     <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
-                        🔍 記事を検索
+                        記事を検索
                     </h3>
                     <?php get_search_form(); ?>
                 </div>
@@ -204,7 +204,7 @@
                 <!-- 人気記事 -->
                 <div class="card p-6">
                     <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
-                        🔥 人気記事
+                        人気記事
                     </h3>
                     <?php
                     $popular_posts = wp_get_recent_posts(array(
@@ -236,7 +236,7 @@
                 <!-- 運営会社へのリンク -->
                 <div class="card p-6 bg-gradient-to-br from-primary-50 to-secondary-50">
                     <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
-                        🏢 運営会社を探す
+                        運営会社を探す
                     </h3>
                     <p class="text-sm text-gray-600 mb-4">
                         あなたにピッタリの民泊運営会社を見つけませんか？

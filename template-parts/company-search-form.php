@@ -23,7 +23,12 @@ $area_options = get_area_options_for_search();
         
         <!-- タイトル -->
         <div class="text-center mb-6">
-            <h2 class="text-2xl font-bold text-gray-900 mb-2">🔍 会社を探す</h2>
+            <div class="flex items-center justify-center mb-3">
+                <svg class="w-6 h-6 text-primary-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                <h2 class="text-2xl font-bold text-gray-900">運営会社を検索</h2>
+            </div>
             <p class="text-gray-600 text-sm">条件を指定して、最適な運営会社を見つけましょう</p>
         </div>
 
@@ -72,15 +77,19 @@ $area_options = get_area_options_for_search();
             
             <!-- 対応エリア -->
             <div>
-                <label for="area-select" class="block text-sm font-semibold text-gray-700 mb-2">
-                    📍 対応エリア
+                <label for="area-select" class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                    <svg class="w-4 h-4 text-gray-500 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    対応エリア
                 </label>
                 <select 
                     name="area" 
                     id="area-select"
                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
                 >
-                    <option value="">すべての地域</option>
+                    <option value="">全国</option>
                     
                     <optgroup label="主要都市">
                         <?php foreach ($area_options['major'] as $key => $label) : ?>
@@ -150,8 +159,11 @@ $area_options = get_area_options_for_search();
 
             <!-- 料金帯 -->
             <div>
-                <label for="fee-select" class="block text-sm font-semibold text-gray-700 mb-2">
-                    💰 料金帯
+                <label for="fee-select" class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                    <svg class="w-4 h-4 text-gray-500 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    料金帯
                 </label>
                 <select 
                     name="fee" 
@@ -159,16 +171,19 @@ $area_options = get_area_options_for_search();
                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
                 >
                     <option value="">すべての料金帯</option>
-                    <option value="low" <?php selected($current_fee, 'low'); ?>>💚 〜10%（お得）</option>
-                    <option value="middle" <?php selected($current_fee, 'middle'); ?>>💛 11%〜15%（標準）</option>
-                    <option value="high" <?php selected($current_fee, 'high'); ?>>🧡 16%〜（プレミアム）</option>
+                    <option value="low" <?php selected($current_fee, 'low'); ?>>〜10%（低価格）</option>
+                    <option value="middle" <?php selected($current_fee, 'middle'); ?>>11%〜15%（標準）</option>
+                    <option value="high" <?php selected($current_fee, 'high'); ?>>16%〜（プレミアム）</option>
                 </select>
             </div>
 
             <!-- サービス特徴 -->
             <div>
-                <label for="service-select" class="block text-sm font-semibold text-gray-700 mb-2">
-                    ✨ サービス特徴
+                <label for="service-select" class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                    <svg class="w-4 h-4 text-gray-500 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                    </svg>
+                    サービス特徴
                 </label>
                 <select 
                     name="service" 
@@ -176,17 +191,20 @@ $area_options = get_area_options_for_search();
                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
                 >
                     <option value="">すべてのサービス</option>
-                    <option value="cleaning" <?php selected($current_service, 'cleaning'); ?>>🧹 清掃込み</option>
-                    <option value="24h" <?php selected($current_service, '24h'); ?>>🌙 24時間対応</option>
-                    <option value="airbnb" <?php selected($current_service, 'airbnb'); ?>>🏡 Airbnbパートナー</option>
+                    <option value="cleaning" <?php selected($current_service, 'cleaning'); ?>>清掃込み</option>
+                    <option value="24h" <?php selected($current_service, '24h'); ?>>24時間対応</option>
+                    <option value="airbnb" <?php selected($current_service, 'airbnb'); ?>>Airbnbパートナー</option>
                 </select>
             </div>
         </div>
 
                 <!-- 並び順 -->
                 <div class="border-t border-gray-200 pt-4">
-                    <label for="sort-select" class="block text-sm font-semibold text-gray-700 mb-2">
-                        📊 並び順
+                    <label for="sort-select" class="block text-sm font-semibold text-gray-700 mb-2 flex items-center">
+                        <svg class="w-4 h-4 text-gray-500 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12" />
+                        </svg>
+                        並び順
                     </label>
                     <select 
                         name="orderby" 
