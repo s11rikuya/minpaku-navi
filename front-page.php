@@ -12,56 +12,43 @@
         <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/40"></div>
     </div>
     
-    <!-- 装飾的な要素 -->
-    <div class="absolute top-10 md:top-20 left-5 md:left-10 w-16 md:w-20 h-16 md:h-20 bg-white/10 rounded-full blur-xl"></div>
-    <div class="absolute bottom-10 md:bottom-20 right-5 md:right-10 w-24 md:w-32 h-24 md:h-32 bg-white/10 rounded-full blur-2xl"></div>
-    <div class="absolute top-1/3 left-1/4 w-12 md:w-16 h-12 md:h-16 bg-white/10 rounded-full blur-lg"></div>
     
             <div class="relative z-10 max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 flex items-center h-full py-12 md:py-16">
         <div class="text-center w-full">
             <div class="mb-4 md:mb-6 inline-block">
-                <span class="inline-flex items-center px-3 py-1.5 md:px-2 md:py-2 bg-white/25 backdrop-blur-md rounded-full text-white text-xs md:text-sm font-medium border border-white/20">
-                    民泊運営をわかりやすく、比較しやすく
+                <span class="inline-flex items-center px-4 py-2 bg-white/20 rounded-md text-white text-xs md:text-sm font-semibold border border-white/30 uppercase tracking-wide">
+                    民泊運営代行会社比較サイト
                 </span>
             </div>
             <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 text-white leading-tight drop-shadow-2xl">
-                民泊運営の<br>
-                <span class="text-warm-200 drop-shadow-lg">すべてがわかる</span>
+                民泊運営代行会社の<br>
+                <span class="text-primary-300 drop-shadow-lg">比較・検索プラットフォーム</span>
             </h1>
             <p class="text-base md:text-xl lg:text-2xl mb-6 md:mb-8 max-w-3xl lg:max-w-4xl mx-auto text-white/95 leading-relaxed drop-shadow-lg px-2">
-                民泊運営の始め方から運営会社の選び方まで、わかりやすく解説。<br class="hidden md:block">
-                あなたにピッタリの運営パートナーを見つけましょう。
+                全国の民泊運営代行会社を網羅的に比較。<br class="hidden md:block">
+                実績・料金・サービス内容から最適な運営パートナーを選定できます。
             </p>
             <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-2">
-                <a href="<?php echo esc_url(site_url('/companies')); ?>" class="btn-primary transform hover:scale-105 shadow-2xl text-sm md:text-base inline-flex items-center justify-center">
+                <a href="<?php echo esc_url(site_url('/companies')); ?>" class="btn-primary shadow-xl text-sm md:text-base inline-flex items-center justify-center">
                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
-                    運営会社を調べる
+                    運営会社を検索
                 </a>
-                <a href="<?php echo esc_url(site_url('/category/columns')); ?>" class="btn-secondary shadow-2xl backdrop-blur-sm text-sm md:text-base inline-flex items-center justify-center">
+                <a href="<?php echo esc_url(site_url('/category/columns')); ?>" class="btn-secondary shadow-xl text-sm md:text-base inline-flex items-center justify-center">
                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
-                    民泊運営について学ぶ
+                    運営ガイド
                 </a>
             </div>
         </div>
     </div>
     
-    <!-- スクロール誘導 -->
-    <div class="absolute bottom-4 md:bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div class="w-5 h-8 md:w-6 md:h-10 border-2 border-white/60 rounded-full flex justify-center backdrop-blur-sm">
-            <div class="w-0.5 md:w-1 h-2 md:h-3 bg-white/80 rounded-full mt-1.5 md:mt-2"></div>
-        </div>
-    </div>
 </section>
 
-<!-- 次へのスムーズな移行 -->
-<div class="h-4 bg-gradient-to-b from-white/20 to-transparent"></div>
-
 <!-- 検索セクション -->
-<section class="py-12 md:py-16 bg-gradient-to-b from-warm-50 to-white">
+<section class="py-12 md:py-16 bg-gray-50 border-t border-gray-200">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="text-center mb-8 md:mb-12">
             <div class="inline-block mb-4">
@@ -69,8 +56,8 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
             </div>
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">あなたに合った運営会社を比較しよう</h2>
-            <p class="text-base md:text-lg text-gray-600">全国の民泊運営会社を条件で絞り込み、詳しく比較できます</p>
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">運営会社を条件で検索</h2>
+            <p class="text-base md:text-lg text-gray-600">エリア・料金・サービス内容から最適な運営会社を見つけることができます</p>
         </div>
         
         <div class="card p-6 md:p-8 max-w-5xl mx-auto">
@@ -83,8 +70,8 @@
                         </svg>
                         エリア
                     </label>
-                    <select name="area" class="w-full rounded-2xl border-gray-200 focus:border-primary-400 focus:ring-primary-400 transition-colors">
-                        <option value="">どこでも大丈夫</option>
+                    <select name="area" class="w-full rounded-lg border-gray-300 focus:border-primary-500 focus:ring-primary-500 transition-colors">
+                        <option value="">全国</option>
                         <?php
                         $area_options = get_area_options_for_search();
                         $selected_area = isset($_GET['area']) ? $_GET['area'] : '';
@@ -137,8 +124,8 @@
                         </svg>
                         料金帯
                     </label>
-                    <select name="fee" class="w-full rounded-2xl border-gray-200 focus:border-primary-400 focus:ring-primary-400 transition-colors">
-                        <option value="">予算はお任せ</option>
+                    <select name="fee" class="w-full rounded-lg border-gray-300 focus:border-primary-500 focus:ring-primary-500 transition-colors">
+                        <option value="">すべて</option>
                         <option value="low">〜10%（低価格）</option>
                         <option value="middle">11%〜15%（標準）</option>
                         <option value="high">16%〜（プレミアム）</option>
@@ -152,8 +139,8 @@
                         </svg>
                         サービス
                     </label>
-                    <select name="service" class="w-full rounded-2xl border-gray-200 focus:border-primary-400 focus:ring-primary-400 transition-colors">
-                        <option value="">何でもOK</option>
+                    <select name="service" class="w-full rounded-lg border-gray-300 focus:border-primary-500 focus:ring-primary-500 transition-colors">
+                        <option value="">指定なし</option>
                         <option value="cleaning">清掃込み</option>
                         <option value="24h">24時間対応</option>
                         <option value="airbnb">Airbnbパートナー</option>
@@ -161,8 +148,8 @@
                 </div>
                 
                 <div class="flex items-end">
-                    <button type="submit" class="w-full btn-primary transform hover:scale-105">
-                        検索スタート
+                    <button type="submit" class="w-full btn-primary">
+                        検索する
                     </button>
                 </div>
             </form>
@@ -171,16 +158,18 @@
 </section>
 
 <!-- おすすめ運営会社 -->
-<section class="py-16">
+<section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <div class="inline-block mb-4">
-                <svg class="w-12 h-12 text-yellow-500 mx-auto float-animation" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
+                <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center mx-auto">
+                    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                </div>
             </div>
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">評価の高い人気運営会社</h2>
-            <p class="text-lg text-gray-600">実績豊富で評判の良い運営会社をご紹介</p>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">厳選された運営会社</h2>
+            <p class="text-lg text-gray-600">実績・評価・サービス品質で選定した優良企業</p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -204,13 +193,13 @@
                     $airbnb_partner = get_post_meta(get_the_ID(), 'airbnb_partner', true);
                     $support_24h = get_post_meta(get_the_ID(), 'support_24h', true);
             ?>
-                    <div class="card p-6">
+                    <div class="card p-6 hover:shadow-xl transition-shadow">
                         <?php if (has_post_thumbnail()) : ?>
-                            <div class="mb-4 relative overflow-hidden rounded-2xl">
-                                <?php the_post_thumbnail('medium', ['class' => 'w-full h-48 object-cover transition-transform duration-300 hover:scale-105']); ?>
+                            <div class="mb-4 relative overflow-hidden rounded-lg">
+                                <?php the_post_thumbnail('medium', ['class' => 'w-full h-48 object-cover']); ?>
                                 <div class="absolute top-3 right-3">
-                                    <span class="bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-medium text-primary-600">
-                                        おすすめ
+                                    <span class="bg-primary-600 text-white px-3 py-1.5 rounded-md text-xs font-semibold uppercase tracking-wide">
+                                        Featured
                                     </span>
                                 </div>
                             </div>
@@ -251,7 +240,7 @@
                         </div>
                         
                         <a href="<?php the_permalink(); ?>" class="w-full btn-primary justify-center">
-                            詳しく見てみる
+                            詳細を見る
                         </a>
                     </div>
             <?php
@@ -269,10 +258,10 @@
                         $fee_structure = get_post_meta(get_the_ID(), 'fee_structure', true);
                         $property_count = get_post_meta(get_the_ID(), 'property_count_raw', true);
             ?>
-                        <div class="card p-6">
+                        <div class="card p-6 hover:shadow-xl transition-shadow">
                             <?php if (has_post_thumbnail()) : ?>
-                                <div class="mb-4 relative overflow-hidden rounded-2xl">
-                                    <?php the_post_thumbnail('medium', ['class' => 'w-full h-48 object-cover transition-transform duration-300 hover:scale-105']); ?>
+                                <div class="mb-4 relative overflow-hidden rounded-lg">
+                                    <?php the_post_thumbnail('medium', ['class' => 'w-full h-48 object-cover']); ?>
                                 </div>
                             <?php endif; ?>
                             
@@ -318,7 +307,7 @@
 </section>
 
 <!-- サービス紹介 -->
-<section id="how-it-works" class="py-16 bg-gradient-to-b from-secondary-50 to-primary-50">
+<section id="how-it-works" class="py-16 bg-gray-50 border-y border-gray-200">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <div class="inline-block mb-4">
@@ -326,52 +315,52 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
                 </svg>
             </div>
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">民泊運営代行サービスとは？</h2>
-            <p class="text-lg text-gray-600">民泊運営に必要な業務とサービス内容をわかりやすく解説</p>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">民泊運営代行サービスについて</h2>
+            <p class="text-lg text-gray-600">運営代行会社が提供する主要なサービス内容</p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="text-center">
-                <div class="card p-8">
-                    <div class="bg-primary-100 w-20 h-20 rounded-3xl flex items-center justify-center mx-auto mb-6 float-animation">
+                <div class="card p-8 hover:shadow-lg transition-shadow">
+                    <div class="bg-primary-100 w-20 h-20 rounded-lg flex items-center justify-center mx-auto mb-6">
                         <svg class="w-12 h-12 text-primary-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-4">物件管理</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        清掃やメンテナンス、鍵の受け渡しなど。<br>
-                        物件管理に必要な業務内容を詳しく解説
+                        清掃・メンテナンス・鍵の管理など、<br>
+                        物件管理に必要な業務を包括的にサポート
                     </p>
                 </div>
             </div>
             
             <div class="text-center">
-                <div class="card p-8">
-                    <div class="bg-secondary-100 w-20 h-20 rounded-3xl flex items-center justify-center mx-auto mb-6 float-animation" style="animation-delay: 0.5s;">
+                <div class="card p-8 hover:shadow-lg transition-shadow">
+                    <div class="bg-secondary-100 w-20 h-20 rounded-lg flex items-center justify-center mx-auto mb-6">
                         <svg class="w-12 h-12 text-primary-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-4">ゲスト対応</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        24時間365日、多言語でのゲストサポート。<br>
-                        対応方法や体制について詳しくご紹介
+                        24時間365日の多言語対応。<br>
+                        チェックイン・問い合わせ対応を一括サポート
                     </p>
                 </div>
             </div>
             
             <div class="text-center">
-                <div class="card p-8">
-                    <div class="bg-warm-100 w-20 h-20 rounded-3xl flex items-center justify-center mx-auto mb-6 float-animation" style="animation-delay: 1s;">
+                <div class="card p-8 hover:shadow-lg transition-shadow">
+                    <div class="bg-warm-100 w-20 h-20 rounded-lg flex items-center justify-center mx-auto mb-6">
                         <svg class="w-12 h-12 text-primary-600 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-4">収益最適化</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        データ分析とマーケティング手法について。<br>
-                        収益向上の仕組みをわかりやすく解説
+                        データ分析・価格設定・マーケティング。<br>
+                        収益向上のための戦略的サポート
                     </p>
                 </div>
             </div>
@@ -388,8 +377,8 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
             </div>
-            <h2 class="text-3xl font-bold mb-4">民泊運営業界の現状</h2>
-            <p class="text-xl opacity-90">当サイトで紹介している運営会社の実績データ</p>
+            <h2 class="text-3xl font-bold mb-4">実績データ</h2>
+            <p class="text-xl opacity-90">当サイト掲載企業の統計情報</p>
         </div>
         
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
@@ -422,8 +411,8 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
                 </svg>
             </div>
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">最新情報をお届け</h2>
-            <p class="text-lg text-gray-600">民泊運営に役立つ、ためになる情報満載</p>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">最新情報</h2>
+            <p class="text-lg text-gray-600">民泊運営に関するニュース・ノウハウ記事</p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -435,13 +424,13 @@
             if ($latest_posts->have_posts()) :
                 while ($latest_posts->have_posts()) : $latest_posts->the_post();
             ?>
-                    <article class="card overflow-hidden">
+                    <article class="card overflow-hidden hover:shadow-xl transition-shadow">
                         <?php if (has_post_thumbnail()) : ?>
                             <div class="relative overflow-hidden">
-                                <?php the_post_thumbnail('medium', ['class' => 'w-full h-48 object-cover transition-transform duration-300 hover:scale-105']); ?>
+                                <?php the_post_thumbnail('medium', ['class' => 'w-full h-48 object-cover']); ?>
                                 <div class="absolute top-3 left-3">
-                                    <span class="bg-primary-500 text-white px-3 py-1 rounded-full text-xs font-medium">
-                                        新着
+                                    <span class="bg-primary-600 text-white px-3 py-1.5 rounded-md text-xs font-semibold uppercase tracking-wide">
+                                        New
                                     </span>
                                 </div>
                             </div>
@@ -487,17 +476,17 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
         </div>
-        <h2 class="text-2xl md:text-3xl font-bold mb-4">民泊運営を始めてみませんか？</h2>
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">民泊運営代行会社をお探しですか？</h2>
         <p class="text-lg md:text-xl mb-6 md:mb-8 opacity-90 leading-relaxed">
-            運営会社の比較や民泊運営のノウハウをしっかり学んで、<br class="hidden md:block">
-            理想的な民泊運営への第一歩を踏み出しましょう。
+            全国の運営代行会社を比較検討し、<br class="hidden md:block">
+            最適なパートナーを見つけることができます。
         </p>
         <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-            <a href="<?php echo esc_url(site_url('/companies')); ?>" class="btn-primary transform hover:scale-105 text-sm md:text-base">
-                運営会社を比較する
+            <a href="<?php echo esc_url(site_url('/companies')); ?>" class="btn-primary text-sm md:text-base">
+                運営会社を検索
             </a>
             <a href="<?php echo esc_url(site_url('/contact')); ?>" class="btn-secondary text-sm md:text-base">
-                情報について問い合わせる
+                お問い合わせ
             </a>
         </div>
     </div>
